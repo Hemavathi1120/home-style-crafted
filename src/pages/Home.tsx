@@ -3,50 +3,12 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
-import { Search, MapPin, BedDouble, Bath, Square, Home as HomeIcon, Shield, Award, Users } from "lucide-react";
+import { Search, Home as HomeIcon, Shield, Award, Users } from "lucide-react";
 import heroProperty from "@/assets/hero-property.jpg";
-import property1 from "@/assets/property1.jpg";
-import property2 from "@/assets/property2.jpg";
-import property3 from "@/assets/property3.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
 
-  const featuredProperties = [
-    {
-      id: 1,
-      image: property1,
-      title: "Modern City Apartment",
-      price: "$450,000",
-      beds: 2,
-      baths: 2,
-      area: "1,200",
-      location: "Downtown District",
-      description: "Stunning modern apartment with city views and premium amenities."
-    },
-    {
-      id: 2,
-      image: property2,
-      title: "Elegant Suburban Home",
-      price: "$675,000",
-      beds: 4,
-      baths: 3,
-      area: "2,400",
-      location: "Maple Heights",
-      description: "Beautiful family home with spacious rooms and large garden."
-    },
-    {
-      id: 3,
-      image: property3,
-      title: "Luxury Penthouse",
-      price: "$1,250,000",
-      beds: 3,
-      baths: 3,
-      area: "1,800",
-      location: "Sky Tower",
-      description: "Exclusive penthouse with panoramic city views and premium finishes."
-    }
-  ];
 
   const benefits = [
     {
@@ -86,11 +48,11 @@ const Home = () => {
               <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
-                Listings
+              <a href="/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
+                Real Estate Info
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
-                About
+              <a href="/application" className="text-foreground hover:text-primary transition-colors font-medium">
+                Application
               </a>
               <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
@@ -159,69 +121,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Listings */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Featured Properties
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Handpicked properties that offer the best value and location
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map((property) => (
-              <Card key={property.id} className="card-hover overflow-hidden">
-                <div className="relative">
-                  <img 
-                    src={property.image} 
-                    alt={property.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
-                    Featured
-                  </Badge>
-                </div>
-                
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-semibold">{property.title}</h3>
-                    <span className="text-2xl font-bold text-primary">{property.price}</span>
-                  </div>
-                  
-                  <div className="flex items-center text-muted-foreground mb-4">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    <span className="text-sm">{property.location}</span>
-                  </div>
-
-                  <div className="flex items-center justify-between mb-4 text-sm">
-                    <div className="flex items-center">
-                      <BedDouble className="h-4 w-4 mr-1" />
-                      <span>{property.beds} beds</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Bath className="h-4 w-4 mr-1" />
-                      <span>{property.baths} baths</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Square className="h-4 w-4 mr-1" />
-                      <span>{property.area} sq ft</span>
-                    </div>
-                  </div>
-
-                  <p className="text-muted-foreground mb-4">{property.description}</p>
-                  
-                  <Button className="w-full btn-primary">
-                    View Details
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Why Choose Us */}
       <section className="py-16 bg-muted/30">
