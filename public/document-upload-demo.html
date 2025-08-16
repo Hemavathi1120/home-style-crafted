@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload Demo</title>
+    <link rel="stylesheet" href="document-upload-styles.css">
+</head>
+<body>
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <h1 style="text-align: center; margin-bottom: 30px;">Document Upload Demo</h1>
+        
+        <div id="required-documents" class="required-documents-section">
+            <h3 class="documents-title">
+                <span class="section-number">4</span> Required Documents
+            </h3>
+            
+            <div class="document-grid">
+                <div class="document-card" id="income-doc-card">
+                    <div class="document-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <div class="document-details">
+                        <h4>Income Documents</h4>
+                        <p>Pay stubs, tax returns, W-2s</p>
+                    </div>
+                    <div class="document-upload">
+                        <label for="income-file-upload" class="upload-button">Upload Files</label>
+                        <input 
+                            type="file" 
+                            id="income-file-upload" 
+                            class="file-input" 
+                            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" 
+                        />
+                    </div>
+                    <div class="upload-status" id="income-upload-status"></div>
+                </div>
+
+                <div class="document-card" id="bank-doc-card">
+                    <div class="document-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="document-details">
+                        <h4>Bank Statements</h4>
+                        <p>Last 3 months</p>
+                    </div>
+                    <div class="document-upload">
+                        <label for="bank-file-upload" class="upload-button">Upload Files</label>
+                        <input 
+                            type="file" 
+                            id="bank-file-upload" 
+                            class="file-input" 
+                            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" 
+                        />
+                    </div>
+                    <div class="upload-status" id="bank-upload-status"></div>
+                </div>
+            </div>
+
+            <h3 class="documents-subtitle">Additional Documents (if applicable)</h3>
+            
+            <div class="document-grid-additional">
+                <div class="document-card-small" id="credit-doc-card">
+                    <div class="document-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="document-details">
+                        <h4>Credit Report</h4>
+                    </div>
+                    <div class="document-upload">
+                        <label for="credit-file-upload" class="upload-button-small">Upload</label>
+                        <input 
+                            type="file" 
+                            id="credit-file-upload" 
+                            class="file-input" 
+                            accept=".pdf,.jpg,.jpeg,.png" 
+                        />
+                    </div>
+                    <div class="upload-status" id="credit-upload-status"></div>
+                </div>
+
+                <div class="document-card-small" id="employment-doc-card">
+                    <div class="document-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="document-details">
+                        <h4>Employment Letter</h4>
+                    </div>
+                    <div class="document-upload">
+                        <label for="employment-file-upload" class="upload-button-small">Upload</label>
+                        <input 
+                            type="file" 
+                            id="employment-file-upload" 
+                            class="file-input" 
+                            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" 
+                        />
+                    </div>
+                    <div class="upload-status" id="employment-upload-status"></div>
+                </div>
+
+                <div class="document-card-small" id="asset-doc-card">
+                    <div class="document-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="document-details">
+                        <h4>Asset Statements</h4>
+                    </div>
+                    <div class="document-upload">
+                        <label for="asset-file-upload" class="upload-button-small">Upload</label>
+                        <input 
+                            type="file" 
+                            id="asset-file-upload" 
+                            class="file-input" 
+                            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" 
+                        />
+                    </div>
+                    <div class="upload-status" id="asset-upload-status"></div>
+                </div>
+            </div>
+            
+            <div id="upload-info" class="upload-info">
+                <p>Supported file types: PDF, JPG, PNG, DOC, DOCX</p>
+                <p>Maximum file size: 10MB</p>
+                
+                <div class="document-progress">
+                    <div class="progress-text">0/2 Required Documents</div>
+                    <div class="progress-container">
+                        <div class="application-progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="document-upload.js"></script>
+</body>
+</html>

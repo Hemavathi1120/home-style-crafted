@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamHome - Property Application</title>
+  <link rel="stylesheet" href="application-styles.css">
+  <style>
+    /* Base styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.5;
+      color: hsl(210, 8%, 15%);
+      margin: 0;
+      padding: 0;
+      background-color: hsl(42, 12%, 98%);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+    
+    .card-content {
+      padding: 24px;
+    }
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: hsl(210, 8%, 15%);
+    }
+    
+    .description {
+      color: hsl(210, 8%, 45%);
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <h2>Property Application</h2>
+        <p class="description">
+          Ready to apply for a property? Fill out our quick application form to get started.
+        </p>
+        
+        <div class="application-section">
+          <div class="application-step">
+            <div class="step-number">1</div>
+            <div class="step-text">Personal Information</div>
+          </div>
+          <div class="application-step">
+            <div class="step-number">2</div>
+            <div class="step-text">Income Verification</div>
+          </div>
+          <div class="application-step">
+            <div class="step-number">3</div>
+            <div class="step-text">Background Check</div>
+          </div>
+          <div class="application-step">
+            <div class="step-number">4</div>
+            <div class="step-text">Property Selection</div>
+          </div>
+
+          <div id="required-documents" class="required-documents-section">
+            <h3 class="documents-title">Required Documents</h3>
+            <p class="documents-description">Please prepare the following documents before starting your application:</p>
+            
+            <div class="document-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" id="document-progress-fill"></div>
+              </div>
+              <div class="progress-text">
+                <span id="documents-ready">0</span> of <span id="documents-total">4</span> documents ready
+              </div>
+            </div>
+            
+            <div class="documents-list">
+              <div class="document-item" id="doc-id">
+                <div class="document-icon">📄</div>
+                <div class="document-info">
+                  <h4>Identification</h4>
+                  <p>Government-issued photo ID (driver's license, passport)</p>
+                </div>
+                <div class="document-status">Required</div>
+              </div>
+              
+              <div class="document-item" id="doc-proof-income">
+                <div class="document-icon">💼</div>
+                <div class="document-info">
+                  <h4>Proof of Income</h4>
+                  <p>Last 3 months of pay stubs or bank statements</p>
+                </div>
+                <div class="document-status">Required</div>
+              </div>
+              
+              <div class="document-item" id="doc-reference">
+                <div class="document-icon">👥</div>
+                <div class="document-info">
+                  <h4>References</h4>
+                  <p>Contact information for previous landlords</p>
+                </div>
+                <div class="document-status">Required</div>
+              </div>
+              
+              <div class="document-item" id="doc-credit">
+                <div class="document-icon">📊</div>
+                <div class="document-info">
+                  <h4>Credit Report</h4>
+                  <p>We'll run a credit check during the application</p>
+                </div>
+                <div class="document-status">Automatic</div>
+              </div>
+            </div>
+            
+            <div id="documents-checklist-toggle" class="documents-checklist-toggle">
+              View Checklist
+            </div>
+          </div>
+
+          <div id="feature-cards" class="feature-container">
+            <!-- Feature cards will be added by JavaScript -->
+          </div>
+
+          <div id="application-timer" class="application-timer">
+            <p>Limited time offer ends in: <span id="countdown">00:00:00</span></p>
+          </div>
+
+          <a 
+            href="/application" 
+            class="application-button"
+            id="applicationButton"
+          >
+            Start Application
+          </a>
+
+          <p class="application-info">
+            Application typically takes 15-20 minutes to complete. You can save and return later.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="application.js"></script>
+</body>
+</html>

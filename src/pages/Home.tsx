@@ -45,16 +45,19 @@ const Home = () => {
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/home" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
               <a href="/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
                 Real Estate Info
               </a>
+              <a href="/properties" className="text-foreground hover:text-primary transition-colors font-medium">
+                Properties
+              </a>
               <a href="/application" className="text-foreground hover:text-primary transition-colors font-medium">
                 Application
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
             </nav>
@@ -85,7 +88,7 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 opacity-90">
             Discover the perfect property that matches your lifestyle and budget
           </p>
-          <Button className="btn-secondary text-lg px-8 py-4 h-auto">
+          <Button className="btn-secondary text-lg px-8 py-4 h-auto" onClick={() => navigate("/properties") }>
             Explore Properties
           </Button>
         </div>
@@ -173,7 +176,7 @@ const Home = () => {
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Listings</a></li>
                 <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About</a></li>
-                <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
+                <li><a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
               </ul>
             </div>
             

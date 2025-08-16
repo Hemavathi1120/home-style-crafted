@@ -56,10 +56,13 @@ const Application = () => {
               <a href="/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
                 Real Estate Info
               </a>
+              <a href="/properties" className="text-foreground hover:text-primary transition-colors font-medium">
+                Properties
+              </a>
               <a href="/application" className="text-primary font-medium">
                 Application
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
             </nav>
@@ -441,7 +444,7 @@ const Application = () => {
                 <li><a href="/home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
                 <li><a href="/real-estate-info" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Real Estate Info</a></li>
                 <li><a href="/application" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Application</a></li>
-                <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
+                <li><a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
               </ul>
             </div>
             
