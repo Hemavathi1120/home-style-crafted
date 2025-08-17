@@ -7,21 +7,22 @@ const Properties = () => {
 
   // Load external CSS and JS for the properties section
   useEffect(() => {
+  const base = import.meta.env.BASE_URL || '/';
     // Add CSS
     const propertiesStyles = document.createElement('link');
     propertiesStyles.rel = 'stylesheet';
-    propertiesStyles.href = '/properties-styles.css';
+  propertiesStyles.href = `${base}properties-styles.css`;
     document.head.appendChild(propertiesStyles);
     
     // Add the new properties page CSS
     const propertiesPageStyles = document.createElement('link');
     propertiesPageStyles.rel = 'stylesheet';
-    propertiesPageStyles.href = '/properties-page-styles.css';
+  propertiesPageStyles.href = `${base}properties-page-styles.css`;
     document.head.appendChild(propertiesPageStyles);
 
     // Add JS
     const propertiesScript = document.createElement('script');
-    propertiesScript.src = '/properties-page.js';
+  propertiesScript.src = `${base}properties-page.js`;
     propertiesScript.async = true;
     document.body.appendChild(propertiesScript);
 
@@ -45,19 +46,19 @@ const Properties = () => {
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="/home" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/home" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
                 Real Estate Info
               </a>
-              <a href="/properties" className="text-primary font-medium">
+              <a href="#/properties" className="text-primary font-medium">
                 Properties
               </a>
-              <a href="/application" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/application" className="text-foreground hover:text-primary transition-colors font-medium">
                 Application
               </a>
-              <a href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
             </nav>

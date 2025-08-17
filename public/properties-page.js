@@ -1208,6 +1208,23 @@ function setupEventListeners() {
       searchProperties();
     });
   }
+  // If there is no <form>, wire up the Search button and Enter key
+  const searchButton = document.querySelector('.property-search .search-button');
+  if (searchButton) {
+    searchButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      searchProperties();
+    });
+  }
+  const mainSearchInput = document.getElementById('main-search');
+  if (mainSearchInput) {
+    mainSearchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        searchProperties();
+      }
+    });
+  }
   
   // Filter functionality
   const applyFiltersButton = document.querySelector('.apply-filters-button');

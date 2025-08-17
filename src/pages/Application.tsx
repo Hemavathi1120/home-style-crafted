@@ -50,19 +50,19 @@ const Application = () => {
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="/home" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/home" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/real-estate-info" className="text-foreground hover:text-primary transition-colors font-medium">
                 Real Estate Info
               </a>
-              <a href="/properties" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/properties" className="text-foreground hover:text-primary transition-colors font-medium">
                 Properties
               </a>
-              <a href="/application" className="text-primary font-medium">
+              <a href="#/application" className="text-primary font-medium">
                 Application
               </a>
-              <a href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#/contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
             </nav>
@@ -441,10 +441,10 @@ const Application = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="/home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
-                <li><a href="/real-estate-info" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Real Estate Info</a></li>
-                <li><a href="/application" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Application</a></li>
-                <li><a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
+                <li><a href="#/home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
+                <li><a href="#/real-estate-info" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Real Estate Info</a></li>
+                <li><a href="#/application" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Application</a></li>
+                <li><a href="#/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
               </ul>
             </div>
             
