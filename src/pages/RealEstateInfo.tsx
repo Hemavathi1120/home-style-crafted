@@ -55,6 +55,16 @@ const RealEstateInfo = () => {
     }
   ];
 
+  // Example real estate images (unsplash, royalty-free)
+  const galleryImages = [
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=800&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1519974719765-e6559eac2575?q=80&w=800&auto=format&fit=crop"
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -95,15 +105,42 @@ const RealEstateInfo = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+      {/* Hero Section with Image */}
+      <section className="relative h-[340px] md:h-[420px] w-full flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary/10 to-secondary/10">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop"
+          alt="Modern Real Estate Hero"
+          className="absolute inset-0 w-full h-full object-cover object-center opacity-70"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-6">
             Real Estate Market Insights
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Stay informed with the latest market trends, expert analysis, and comprehensive guides to help you make informed real estate decisions.
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow">
+            Stay informed with the latest market trends, expert analysis, and comprehensive guides to help you make smart real estate decisions in Andhra Pradesh.
           </p>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-10 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Discover Beautiful Properties</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">From modern apartments to luxury villas, explore a visual showcase of real estate in Andhra Pradesh.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 rounded-xl overflow-hidden">
+            {galleryImages.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Property ${idx + 1}`}
+                className="rounded-lg shadow-md object-cover w-full h-40 md:h-56 hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -118,15 +155,14 @@ const RealEstateInfo = () => {
               Real-time data from our local market analysis
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {marketStats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="card-hover">
+                <Card key={index} className="card-hover bg-white/90 shadow-lg border-0">
                   <CardContent className="p-6 text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4">
-                      <IconComponent className="h-6 w-6 text-primary" />
+                    <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full mb-4 shadow">
+                      <IconComponent className="h-7 w-7 text-primary" />
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{stat.title}</h3>
                     <div className="text-2xl font-bold text-primary mb-2">{stat.value}</div>
@@ -152,12 +188,18 @@ const RealEstateInfo = () => {
               Comprehensive guides to help you navigate the real estate market
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {guides.map((guide, index) => (
-              <Card key={index} className="card-hover">
+              <Card key={index} className="card-hover bg-white/90 shadow-md border-0">
                 <CardHeader>
-                  <CardTitle className="text-xl">{guide.title}</CardTitle>
+                  <CardTitle className="text-xl flex items-center gap-2">
+                    <img
+                      src={galleryImages[index % galleryImages.length]}
+                      alt="Guide Visual"
+                      className="w-8 h-8 rounded object-cover shadow"
+                    />
+                    {guide.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{guide.description}</p>

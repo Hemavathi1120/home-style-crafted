@@ -81,99 +81,84 @@ const Properties = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-12 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
-            Find Your Dream Property
+
+
+      {/* Hero Section - Modern Glassmorphic with Modern Search Bar */}
+      <section className="relative min-h-[480px] flex flex-col items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary-dark/60" />
+        <div className="relative z-10 flex flex-col items-center w-full px-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg text-white text-center">
+            Discover Properties in Andhra Pradesh
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Browse our extensive collection of premium properties in the most desirable locations
+          <p className="text-2xl mb-8 opacity-90 text-white text-center max-w-2xl">
+            Explore the best homes, apartments, and villas for sale and rent in top AP locations.
           </p>
-
-          {/* Property Search */}
-          <div className="property-search-container">
-            <div className="property-search">
-              <div className="search-row">
-                <div className="search-group">
-                  <label htmlFor="main-search" className="search-label">Location, Property Type, or Keyword</label>
-                  <div className="search-input-wrapper">
-                    <input 
-                      id="main-search" 
-                      type="text" 
-                      className="search-input" 
-                      placeholder="Search for properties..."
-                    />
-                    <button className="search-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                      </svg>
-                      Search
-                    </button>
-                  </div>
-                </div>
+          {/* Modern Search Bar */}
+          <div className="w-full max-w-4xl">
+            <form
+              className="backdrop-blur-md bg-white/30 border border-white/40 rounded-2xl shadow-xl p-3 flex flex-row gap-3 items-center"
+              style={{ minHeight: '64px' }}
+            >
+              <div className="flex items-center gap-2 flex-1 min-w-0 h-12">
+                <span className="text-primary-700 flex items-center h-full">
+                  <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='feather feather-search'><circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>
+                </span>
+                <input
+                  id="main-search"
+                  type="text"
+                  className="flex-1 bg-transparent border-none outline-none text-lg placeholder:text-primary-900/60 px-2 py-2 h-full"
+                  placeholder="Location, Property Type, or Keyword"
+                  autoComplete="off"
+                  style={{ minWidth: 0, height: '100%' }}
+                />
               </div>
-
-              <div className="search-row">
-                <div className="search-group">
-                  <label htmlFor="property-type" className="search-label">Property Type</label>
-                  <select id="property-type" className="search-select">
-                    <option value="all">All Types</option>
-                    <option value="House">House</option>
-                    <option value="Condo">Condo</option>
-                    <option value="Townhouse">Townhouse</option>
-                    <option value="Apartment">Apartment</option>
-                    <option value="Villa">Villa</option>
-                    <option value="Studio">Studio</option>
-                    <option value="Duplex">Duplex</option>
-                    <option value="Farmhouse">Farmhouse</option>
-                    <option value="Bungalow">Bungalow</option>
-                    <option value="Land">Land</option>
-                  </select>
-                </div>
-
-                <div className="search-group">
-                  <label htmlFor="property-status" className="search-label">Status</label>
-                  <select id="property-status" className="search-select">
-                    <option value="all">All Status</option>
-                    <option value="For Sale">For Sale</option>
-                    <option value="For Rent">For Rent</option>
-                    <option value="Sold">Sold</option>
-                  </select>
-                </div>
-
-                <div className="search-group">
-                  <label htmlFor="price-range" className="search-label">Price Range</label>
-                  <select id="price-range" className="search-select">
-                    <option value="all">Any Price</option>
-                    <option value="0-5000000">Under ₹50L</option>
-                    <option value="5000000-10000000">₹50L - ₹1Cr</option>
-                    <option value="10000000-20000000">₹1Cr - ₹2Cr</option>
-                    <option value="20000000-max">₹2Cr+</option>
-                  </select>
-                </div>
-
-                <div className="search-group">
-                  <label htmlFor="bedrooms" className="search-label">Bedrooms</label>
-                  <select id="bedrooms" className="search-select">
-                    <option value="any">Any</option>
-                    <option value="1">1+</option>
-                    <option value="2">2+</option>
-                    <option value="3">3+</option>
-                    <option value="4">4+</option>
-                    <option value="5">5+</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div className="search-advanced-toggle">
-                <span>Advanced Options</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-            </div>
+              <select id="property-type" className="rounded-xl px-3 h-12 bg-white/80 text-primary-900 border border-primary-200 focus:ring-2 focus:ring-primary-400 min-w-[120px]">
+                <option value="all">All Types</option>
+                <option value="House">House</option>
+                <option value="Condo">Condo</option>
+                <option value="Townhouse">Townhouse</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Villa">Villa</option>
+                <option value="Studio">Studio</option>
+                <option value="Duplex">Duplex</option>
+                <option value="Farmhouse">Farmhouse</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Land">Land</option>
+              </select>
+              <select id="property-status" className="rounded-xl px-3 h-12 bg-white/80 text-primary-900 border border-primary-200 focus:ring-2 focus:ring-primary-400 min-w-[120px]">
+                <option value="all">All Status</option>
+                <option value="For Sale">For Sale</option>
+                <option value="For Rent">For Rent</option>
+                <option value="Sold">Sold</option>
+              </select>
+              <select id="price-range" className="rounded-xl px-3 h-12 bg-white/80 text-primary-900 border border-primary-200 focus:ring-2 focus:ring-primary-400 min-w-[120px]">
+                <option value="all">Any Price</option>
+                <option value="0-5000000">Under ₹50L</option>
+                <option value="5000000-10000000">₹50L - ₹1Cr</option>
+                <option value="10000000-20000000">₹1Cr - ₹2Cr</option>
+                <option value="20000000-max">₹2Cr+</option>
+              </select>
+              <select id="bedrooms" className="rounded-xl px-3 h-12 bg-white/80 text-primary-900 border border-primary-200 focus:ring-2 focus:ring-primary-400 min-w-[90px]">
+                <option value="any">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+              <button
+                type="button"
+                className="bg-primary text-white rounded-xl px-6 h-12 text-lg font-semibold shadow hover:bg-primary-dark transition flex items-center gap-2 min-w-[110px]"
+                style={{ height: '48px' }}
+              >
+                <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='feather feather-search'><circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>
+                Search
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -347,30 +332,6 @@ const Properties = () => {
               {/* Property cards will be added by JavaScript */}
             </div>
             
-            {/* Properties Pagination */}
-            <div className="properties-pagination">
-              <button className="pagination-button pagination-prev" disabled>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-                Previous
-              </button>
-              
-              <div className="pagination-numbers">
-                <button className="pagination-number pagination-active">1</button>
-                <button className="pagination-number">2</button>
-                <button className="pagination-number">3</button>
-                <span className="pagination-ellipsis">...</span>
-                <button className="pagination-number">10</button>
-              </div>
-              
-              <button className="pagination-button pagination-next">
-                Next
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
       </div>

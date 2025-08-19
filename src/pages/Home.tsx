@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
-import { Search, Home as HomeIcon, Shield, Award, Users } from "lucide-react";
+import { Home as HomeIcon, Shield, Award, Users } from "lucide-react";
 import heroProperty from "@/assets/hero-property.jpg";
 
 const Home = () => {
@@ -94,35 +92,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Search Bar */}
-      <section className="py-12 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <Card className="card-hover">
-            <CardContent className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">Location</label>
-                  <Input placeholder="Enter city or area" className="h-12" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">Property Type</label>
-                  <Input placeholder="House, Apartment..." className="h-12" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">Price Range</label>
-                  <Input placeholder="Min - Max Price" className="h-12" />
-                </div>
-                <div className="flex items-end">
-                  <Button className="w-full h-12 btn-primary">
-                    <Search className="h-5 w-5 mr-2" />
-                    Search
-                  </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+
 
 
       {/* Why Choose Us */}

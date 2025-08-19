@@ -7,8 +7,22 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { useNavigate } from "react-router-dom";
 import { Home as HomeIcon, Upload, FileText, CheckCircle } from "lucide-react";
+import React, { useRef, useState } from "react";
 
 const Application = () => {
+  // File upload state
+  const [incomeFiles, setIncomeFiles] = useState<File[]>([]);
+  const [bankFiles, setBankFiles] = useState<File[]>([]);
+  const [creditFiles, setCreditFiles] = useState<File[]>([]);
+  const [employmentFiles, setEmploymentFiles] = useState<File[]>([]);
+  const [assetFiles, setAssetFiles] = useState<File[]>([]);
+
+  // Refs for file inputs
+  const incomeInputRef = useRef<HTMLInputElement>(null);
+  const bankInputRef = useRef<HTMLInputElement>(null);
+  const creditInputRef = useRef<HTMLInputElement>(null);
+  const employmentInputRef = useRef<HTMLInputElement>(null);
+  const assetInputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
   const applicationSteps = [
@@ -36,6 +50,15 @@ const Application = () => {
       description: "Upload required documents",
       completed: false
     }
+  ];
+
+  // Gallery/hero images for visual enhancement
+  const heroImage = "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop";
+  const stepImages = [
+    "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=400&auto=format&fit=crop", // Personal
+    "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=400&auto=format&fit=crop", // Financial
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", // Preferences
+    "https://images.unsplash.com/photo-1519974719765-e6559eac2575?q=80&w=400&auto=format&fit=crop"  // Documents
   ];
 
   return (
@@ -78,20 +101,36 @@ const Application = () => {
         </div>
       </header>
 
-      {/* Progress Steps */}
+      {/* Hero Section with Image */}
+      <section className="relative h-[260px] md:h-[340px] w-full flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary/10 to-secondary/10">
+        <img
+          src={heroImage}
+          alt="Application Hero"
+          className="absolute inset-0 w-full h-full object-cover object-center opacity-70"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-4">
+            Apply for Your Dream Home
+          </h1>
+          <p className="text-lg text-white/90 max-w-2xl mx-auto drop-shadow">
+            Start your real estate journey with a simple, guided application process.
+          </p>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      </section>
+
+      {/* Progress Steps with Images */}
       <section className="py-8 bg-muted/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {applicationSteps.map((step, index) => (
-              <div key={step.step} className="flex items-center">
-                <div className="flex flex-col items-center">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${
-                    step.completed ? 'bg-green-500 text-white' : 'bg-primary text-primary-foreground'
-                  }`}>
-                    {step.completed ? <CheckCircle className="h-5 w-5" /> : step.step}
-                  </div>
-                  <p className="text-xs mt-2 text-center max-w-20">{step.title}</p>
+              <div key={step.step} className="flex flex-col items-center">
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${
+                  step.completed ? 'bg-green-500 text-white' : 'bg-primary text-primary-foreground'
+                }`}>
+                  {step.completed ? <CheckCircle className="h-5 w-5" /> : step.step}
                 </div>
+                <p className="text-xs mt-2 text-center max-w-20">{step.title}</p>
                 {index < applicationSteps.length - 1 && (
                   <div className="w-16 h-0.5 bg-border mx-4 hidden sm:block"></div>
                 )}
@@ -117,8 +156,8 @@ const Application = () => {
             {/* Personal Information */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center">
-                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                <CardTitle className="flex items-center gap-3">
+                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">1</span>
                   Personal Information
                 </CardTitle>
               </CardHeader>
@@ -180,8 +219,8 @@ const Application = () => {
             {/* Financial Information */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center">
-                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                <CardTitle className="flex items-center gap-3">
+                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">2</span>
                   Financial Information
                 </CardTitle>
               </CardHeader>
@@ -244,8 +283,8 @@ const Application = () => {
             {/* Property Preferences */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center">
-                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                <CardTitle className="flex items-center gap-3">
+                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">3</span>
                   Property Preferences
                 </CardTitle>
               </CardHeader>
@@ -332,8 +371,8 @@ const Application = () => {
             {/* Document Upload */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center">
-                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+                <CardTitle className="flex items-center gap-3">
+                  <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">4</span>
                   Required Documents
                 </CardTitle>
               </CardHeader>
@@ -344,9 +383,23 @@ const Application = () => {
                       <Upload className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                       <p className="text-sm font-medium">Income Documents</p>
                       <p className="text-xs text-muted-foreground mb-4">Pay stubs, tax returns, W-2s</p>
-                      <Button variant="outline" size="sm">
+                      <input
+                        type="file"
+                        multiple
+                        ref={incomeInputRef}
+                        className="hidden"
+                        onChange={e => {
+                          if (e.target.files) setIncomeFiles(Array.from(e.target.files));
+                        }}
+                      />
+                      <Button variant="outline" size="sm" onClick={() => incomeInputRef.current?.click()}>
                         Upload Files
                       </Button>
+                      {incomeFiles.length > 0 && (
+                        <div className="mt-2 text-xs text-muted-foreground">
+                          {incomeFiles.map(f => f.name).join(", ")}
+                        </div>
+                      )}
                     </div>
                   </div>
                   
@@ -355,9 +408,23 @@ const Application = () => {
                       <FileText className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                       <p className="text-sm font-medium">Bank Statements</p>
                       <p className="text-xs text-muted-foreground mb-4">Last 3 months</p>
-                      <Button variant="outline" size="sm">
+                      <input
+                        type="file"
+                        multiple
+                        ref={bankInputRef}
+                        className="hidden"
+                        onChange={e => {
+                          if (e.target.files) setBankFiles(Array.from(e.target.files));
+                        }}
+                      />
+                      <Button variant="outline" size="sm" onClick={() => bankInputRef.current?.click()}>
                         Upload Files
                       </Button>
+                      {bankFiles.length > 0 && (
+                        <div className="mt-2 text-xs text-muted-foreground">
+                          {bankFiles.map(f => f.name).join(", ")}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -368,23 +435,62 @@ const Application = () => {
                     <div className="border border-border rounded-lg p-4 text-center">
                       <FileText className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
                       <p className="text-sm">Credit Report</p>
-                      <Button variant="outline" size="sm" className="mt-2">
+                      <input
+                        type="file"
+                        ref={creditInputRef}
+                        className="hidden"
+                        onChange={e => {
+                          if (e.target.files) setCreditFiles(Array.from(e.target.files));
+                        }}
+                      />
+                      <Button variant="outline" size="sm" className="mt-2" onClick={() => creditInputRef.current?.click()}>
                         Upload
                       </Button>
+                      {creditFiles.length > 0 && (
+                        <div className="mt-2 text-xs text-muted-foreground">
+                          {creditFiles.map(f => f.name).join(", ")}
+                        </div>
+                      )}
                     </div>
                     <div className="border border-border rounded-lg p-4 text-center">
                       <FileText className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
                       <p className="text-sm">Employment Letter</p>
-                      <Button variant="outline" size="sm" className="mt-2">
+                      <input
+                        type="file"
+                        ref={employmentInputRef}
+                        className="hidden"
+                        onChange={e => {
+                          if (e.target.files) setEmploymentFiles(Array.from(e.target.files));
+                        }}
+                      />
+                      <Button variant="outline" size="sm" className="mt-2" onClick={() => employmentInputRef.current?.click()}>
                         Upload
                       </Button>
+                      {employmentFiles.length > 0 && (
+                        <div className="mt-2 text-xs text-muted-foreground">
+                          {employmentFiles.map(f => f.name).join(", ")}
+                        </div>
+                      )}
                     </div>
                     <div className="border border-border rounded-lg p-4 text-center">
                       <FileText className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
                       <p className="text-sm">Asset Statements</p>
-                      <Button variant="outline" size="sm" className="mt-2">
+                      <input
+                        type="file"
+                        ref={assetInputRef}
+                        className="hidden"
+                        onChange={e => {
+                          if (e.target.files) setAssetFiles(Array.from(e.target.files));
+                        }}
+                      />
+                      <Button variant="outline" size="sm" className="mt-2" onClick={() => assetInputRef.current?.click()}>
                         Upload
                       </Button>
+                      {assetFiles.length > 0 && (
+                        <div className="mt-2 text-xs text-muted-foreground">
+                          {assetFiles.map(f => f.name).join(", ")}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,5 @@
+  // More diverse Andhra Pradesh properties
+  // (Removed stray property objects here. If you want to add these, put them inside the `kakinadaAdditions` array or directly in the `properties` array.)
 // Properties Page JavaScript
 
 // Sample property data (hardcoded)
@@ -25,7 +27,7 @@ const properties = [
     ],
     agent: {
       name: "Jane Smith",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 123-4567",
       email: "jane.smith@example.com"
     },
@@ -53,7 +55,7 @@ const properties = [
     ],
     agent: {
       name: "Michael Johnson",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 987-6543",
       email: "michael.johnson@example.com"
     },
@@ -81,7 +83,7 @@ const properties = [
     ],
     agent: {
       name: "Emily Davis",
-      image: "https://randomuser.me/api/portraits/women/67.jpg",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 456-7890",
       email: "emily.davis@example.com"
     },
@@ -109,7 +111,7 @@ const properties = [
     ],
     agent: {
       name: "David Wilson",
-      image: "https://randomuser.me/api/portraits/men/54.jpg",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 789-0123",
       email: "david.wilson@example.com"
     },
@@ -137,7 +139,7 @@ const properties = [
     ],
     agent: {
       name: "Sarah Thompson",
-      image: "https://randomuser.me/api/portraits/women/28.jpg",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 234-5678",
       email: "sarah.thompson@example.com"
     },
@@ -165,7 +167,7 @@ const properties = [
     ],
     agent: {
       name: "Robert Chen",
-      image: "https://randomuser.me/api/portraits/men/76.jpg",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop",
       phone: "(555) 876-5432",
       email: "robert.chen@example.com"
     },
@@ -191,7 +193,7 @@ const properties = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Ava Patel", image: "https://randomuser.me/api/portraits/women/12.jpg", phone: "(555) 234-9988", email: "ava.patel@example.com" },
+  agent: { name: "Ava Patel", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 234-9988", email: "ava.patel@example.com" },
     location: { city: "San Francisco", state: "CA", neighborhood: "SoMa" }
   },
   {
@@ -214,7 +216,7 @@ const properties = [
       "https://images.unsplash.com/photo-1586105251261-72a756497a12?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Liam Brown", image: "https://randomuser.me/api/portraits/men/41.jpg", phone: "(555) 664-2211", email: "liam.brown@example.com" },
+  agent: { name: "Liam Brown", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 664-2211", email: "liam.brown@example.com" },
     location: { city: "Lake Tahoe", state: "NV", neighborhood: "Incline Village" }
   },
   {
@@ -237,7 +239,7 @@ const properties = [
       "https://images.unsplash.com/photo-1599420186946-7b1f08b72aab?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Noah Kim", image: "https://randomuser.me/api/portraits/men/77.jpg", phone: "(555) 881-3322", email: "noah.kim@example.com" },
+  agent: { name: "Noah Kim", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 881-3322", email: "noah.kim@example.com" },
     location: { city: "New York", state: "NY", neighborhood: "Tribeca" }
   },
   {
@@ -260,7 +262,7 @@ const properties = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1559718062-2118d76473e0?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Olivia Green", image: "https://randomuser.me/api/portraits/women/52.jpg", phone: "(555) 222-9911", email: "olivia.green@example.com" },
+  agent: { name: "Olivia Green", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 222-9911", email: "olivia.green@example.com" },
     location: { city: "Naperville", state: "IL", neighborhood: "Cedar Ridge" }
   },
   {
@@ -283,7 +285,7 @@ const properties = [
       "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Sophia Martinez", image: "https://randomuser.me/api/portraits/women/33.jpg", phone: "(555) 600-2212", email: "sophia.martinez@example.com" },
+  agent: { name: "Sophia Martinez", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 600-2212", email: "sophia.martinez@example.com" },
     location: { city: "Denver", state: "CO", neighborhood: "LoHi" }
   },
   {
@@ -306,7 +308,7 @@ const properties = [
       "https://images.unsplash.com/photo-1586105251261-72a756497a12?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Ethan Walker", image: "https://randomuser.me/api/portraits/men/29.jpg", phone: "(555) 123-7788", email: "ethan.walker@example.com" },
+  agent: { name: "Ethan Walker", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 123-7788", email: "ethan.walker@example.com" },
     location: { city: "Asheville", state: "NC", neighborhood: "Blue Ridge" }
   }
   ,
@@ -331,7 +333,7 @@ const properties = [
       "https://images.unsplash.com/photo-1599420186946-7b1f08b72aab?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Harsha Varma", image: "https://randomuser.me/api/portraits/men/83.jpg", phone: "+91 98765 12345", email: "harsha.varma@example.com" },
+  agent: { name: "Harsha Varma", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 98765 12345", email: "harsha.varma@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Beach Road" }
   },
   {
@@ -354,7 +356,7 @@ const properties = [
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1560185007-5f0bb1866cab?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Sravani Reddy", image: "https://randomuser.me/api/portraits/women/66.jpg", phone: "+91 90000 11223", email: "sravani.reddy@example.com" },
+  agent: { name: "Sravani Reddy", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 90000 11223", email: "sravani.reddy@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Ramanayyapeta" }
   },
   {
@@ -377,7 +379,7 @@ const properties = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1599420186946-7b1f08b72aab?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Vikram Rao", image: "https://randomuser.me/api/portraits/men/11.jpg", phone: "+91 88999 44556", email: "vikram.rao@example.com" },
+  agent: { name: "Vikram Rao", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 88999 44556", email: "vikram.rao@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Samalkota Road" }
   },
   {
@@ -400,7 +402,7 @@ const properties = [
       "https://images.unsplash.com/photo-1559718062-2118d76473e0?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Niharika Das", image: "https://randomuser.me/api/portraits/women/31.jpg", phone: "+91 77777 66554", email: "niharika.das@example.com" },
+  agent: { name: "Niharika Das", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 77777 66554", email: "niharika.das@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Sarpavaram Junction" }
   },
   {
@@ -423,7 +425,7 @@ const properties = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Srikanth Naidu", image: "https://randomuser.me/api/portraits/men/59.jpg", phone: "+91 96666 11221", email: "srikanth.naidu@example.com" },
+  agent: { name: "Srikanth Naidu", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 96666 11221", email: "srikanth.naidu@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Bhanugudi Junction" }
   },
   {
@@ -446,7 +448,7 @@ const properties = [
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1560185007-5f0bb1866cab?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Ananya Iyer", image: "https://randomuser.me/api/portraits/women/19.jpg", phone: "+91 95555 77889", email: "ananya.iyer@example.com" },
+  agent: { name: "Ananya Iyer", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 95555 77889", email: "ananya.iyer@example.com" },
     location: { city: "Yanam", state: "PY", neighborhood: "Riverfront" }
   },
   {
@@ -469,7 +471,7 @@ const properties = [
       "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Rohit Singh", image: "https://randomuser.me/api/portraits/men/12.jpg", phone: "+91 90009 34343", email: "rohit.singh@example.com" },
+  agent: { name: "Rohit Singh", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 90009 34343", email: "rohit.singh@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Port Area" }
   },
   {
@@ -492,7 +494,7 @@ const properties = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Keerthi Menon", image: "https://randomuser.me/api/portraits/women/22.jpg", phone: "+91 91234 55667", email: "keerthi.menon@example.com" },
+  agent: { name: "Keerthi Menon", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "+91 91234 55667", email: "keerthi.menon@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "Nagamallithota" }
   }
   ,
@@ -517,7 +519,7 @@ const properties = [
       "https://images.unsplash.com/photo-1600585154154-1e4c3b37a755?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154515-527231c71a7b?q=80&w=1600&auto=format&fit=crop"
     ],
-    agent: { name: "Grace Parker", image: "https://randomuser.me/api/portraits/women/72.jpg", phone: "(555) 420-8811", email: "grace.parker@example.com" },
+  agent: { name: "Grace Parker", image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=400&auto=format&fit=crop", phone: "(555) 420-8811", email: "grace.parker@example.com" },
     location: { city: "Scottsdale", state: "AZ", neighborhood: "Palm Grove" }
   },
   {
@@ -679,6 +681,99 @@ function displayPriceINR(property) {
 
 // Add Kakinada and nearby hardcoded properties (moved from Contact page)
 const kakinadaAdditions = [
+  // New Andhra Pradesh properties
+  {
+    id: 209,
+    title: "Luxury 3BHK Flat - Rajahmundry Riverside",
+    address: "Godavari Bund Road, Rajahmundry, AP 533101",
+    price: 7800000,
+    type: "Apartment",
+    status: "For Sale",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 1750,
+    yearBuilt: 2023,
+    description: "Spacious 3BHK with river view balcony, modular kitchen, and covered parking in a gated community.",
+    features: ["Balcony", "Elevator", "Security System", "Parking"],
+    image: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1599420186946-7b1f08b72aab?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Ravi Kumar", image: "https://randomuser.me/api/portraits/men/45.jpg", phone: "+91 99887 12345", email: "ravi.kumar@example.com" },
+    location: { city: "Rajahmundry", state: "AP", neighborhood: "Godavari Bund" }
+  },
+  {
+    id: 210,
+    title: "Independent House - Guntur City Center",
+    address: "Lakshmipuram Main Road, Guntur, AP 522007",
+    price: 9500000,
+    type: "House",
+    status: "For Sale",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 2200,
+    yearBuilt: 2022,
+    description: "Modern 4BHK house with private garden, borewell, and solar power backup in a prime Guntur location.",
+    features: ["Garden", "Parking", "Solar Power", "Borewell"],
+    image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1559718062-2118d76473e0?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Lakshmi Devi", image: "https://randomuser.me/api/portraits/women/55.jpg", phone: "+91 98765 43210", email: "lakshmi.devi@example.com" },
+    location: { city: "Guntur", state: "AP", neighborhood: "Lakshmipuram" }
+  },
+  {
+    id: 211,
+    title: "Budget 2BHK - Vizag Beachside",
+    address: "RK Beach Road, Visakhapatnam, AP 530017",
+    price: 4200000,
+    type: "Apartment",
+    status: "For Sale",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 1100,
+    yearBuilt: 2021,
+    description: "Affordable 2BHK with sea view, 24x7 water supply, and easy access to schools and shopping.",
+    features: ["Sea View", "Parking", "Security System"],
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185007-5f0bb1866cab?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Suresh Reddy", image: "https://randomuser.me/api/portraits/men/35.jpg", phone: "+91 91234 56789", email: "suresh.reddy@example.com" },
+    location: { city: "Visakhapatnam", state: "AP", neighborhood: "RK Beach" }
+  },
+  {
+    id: 212,
+    title: "Rental 1BHK - Vijayawada City",
+    address: "MG Road, Vijayawada, AP 520010",
+    price: 15000,
+    type: "Apartment",
+    status: "For Rent",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: 650,
+    yearBuilt: 2020,
+    description: "Compact 1BHK ideal for working professionals, close to bus stand and shopping malls.",
+    features: ["Elevator", "Power Backup", "Parking"],
+    image: "https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Anil Kumar", image: "https://randomuser.me/api/portraits/men/25.jpg", phone: "+91 90000 11122", email: "anil.kumar@example.com" },
+    location: { city: "Vijayawada", state: "AP", neighborhood: "MG Road" }
+  },
   {
     id: 201,
     title: "Uppada Beachfront 3BHK",
@@ -862,6 +957,248 @@ const kakinadaAdditions = [
     ],
     agent: { name: "Local Expert", image: "https://randomuser.me/api/portraits/men/41.jpg", phone: "+91 96666 11221", email: "expert.kakinada@example.com" },
     location: { city: "Kakinada", state: "AP", neighborhood: "JNTU-K Road" }
+  },
+  // 12 new Andhra Pradesh properties
+  {
+    id: 213,
+    title: "Beachfront Villa - Bheemili",
+    address: "Bheemili Beach Road, Visakhapatnam, AP 531163",
+    price: 18500000,
+    type: "Villa",
+    status: "For Sale",
+    bedrooms: 5,
+    bathrooms: 5,
+    area: 4200,
+    yearBuilt: 2024,
+    description: "Luxurious 5BHK villa with private pool, sea view, and landscaped gardens.",
+    features: ["Pool", "Sea View", "Garden", "Parking", "Security System"],
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Sunitha Rao", image: "https://randomuser.me/api/portraits/women/44.jpg", phone: "+91 90001 23456", email: "sunitha.rao@example.com" },
+    location: { city: "Visakhapatnam", state: "AP", neighborhood: "Bheemili Beach" }
+  },
+  {
+    id: 214,
+    title: "Modern Studio - Amaravati IT Park",
+    address: "IT Park, Amaravati, AP 522503",
+    price: 3200000,
+    type: "Studio",
+    status: "For Sale",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: 550,
+    yearBuilt: 2023,
+    description: "Compact studio apartment ideal for tech professionals, with gym and co-working space.",
+    features: ["Gym", "Co-working", "Parking"],
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Ramesh Babu", image: "https://randomuser.me/api/portraits/men/52.jpg", phone: "+91 91234 56780", email: "ramesh.babu@example.com" },
+    location: { city: "Amaravati", state: "AP", neighborhood: "IT Park" }
+  },
+  {
+    id: 215,
+    title: "Farmhouse Retreat - Anantapur",
+    address: "NH44, Anantapur Rural, AP 515001",
+    price: 9500000,
+    type: "Farmhouse",
+    status: "For Sale",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 3500,
+    yearBuilt: 2021,
+    description: "Spacious farmhouse with fruit orchards, well water, and open lawns.",
+    features: ["Orchard", "Well", "Lawn", "Parking"],
+    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Deepak Reddy", image: "https://randomuser.me/api/portraits/men/61.jpg", phone: "+91 99887 65432", email: "deepak.reddy@example.com" },
+    location: { city: "Anantapur", state: "AP", neighborhood: "NH44" }
+  },
+  {
+    id: 216,
+    title: "Lakeview Penthouse - Kurnool",
+    address: "Orvakal Lake Road, Kurnool, AP 518010",
+    price: 12000000,
+    type: "Penthouse",
+    status: "For Sale",
+    bedrooms: 4,
+    bathrooms: 5,
+    area: 3100,
+    yearBuilt: 2024,
+    description: "Elegant penthouse with panoramic lake views, rooftop deck, and smart home features.",
+    features: ["Lake View", "Rooftop Deck", "Smart Home", "Parking"],
+    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Priya Nair", image: "https://randomuser.me/api/portraits/women/60.jpg", phone: "+91 98765 43219", email: "priya.nair@example.com" },
+    location: { city: "Kurnool", state: "AP", neighborhood: "Orvakal Lake" }
+  },
+  {
+    id: 217,
+    title: "Budget Apartment - Srikakulam Town",
+    address: "Main Road, Srikakulam, AP 532001",
+    price: 2100000,
+    type: "Apartment",
+    status: "For Sale",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 900,
+    yearBuilt: 2022,
+    description: "Affordable 2BHK apartment with lift, generator backup, and children’s play area.",
+    features: ["Elevator", "Power Backup", "Play Area"],
+    image: "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a2a?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a2a?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Sailaja Devi", image: "https://randomuser.me/api/portraits/women/70.jpg", phone: "+91 90000 22233", email: "sailaja.devi@example.com" },
+    location: { city: "Srikakulam", state: "AP", neighborhood: "Main Road" }
+  },
+  {
+    id: 218,
+    title: "Luxury Row House - Nellore",
+    address: "Magunta Layout, Nellore, AP 524003",
+    price: 6700000,
+    type: "Row House",
+    status: "For Sale",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 1800,
+    yearBuilt: 2023,
+    description: "Premium row house with private terrace, modular kitchen, and covered parking.",
+    features: ["Terrace", "Modular Kitchen", "Parking"],
+    image: "https://images.unsplash.com/photo-1519974719765-e6559eac2575?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1519974719765-e6559eac2575?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Vikram Joshi", image: "https://randomuser.me/api/portraits/men/77.jpg", phone: "+91 91234 55678", email: "vikram.joshi@example.com" },
+    location: { city: "Nellore", state: "AP", neighborhood: "Magunta Layout" }
+  },
+  {
+    id: 219,
+    title: "City Center Flat - Eluru",
+    address: "Eluru Main Road, Eluru, AP 534001",
+    price: 3900000,
+    type: "Apartment",
+    status: "For Sale",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 1050,
+    yearBuilt: 2022,
+    description: "2BHK flat in the heart of Eluru, close to schools, hospitals, and shopping.",
+    features: ["Elevator", "Parking", "Security System"],
+    image: "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Meena Sharma", image: "https://randomuser.me/api/portraits/women/80.jpg", phone: "+91 90001 33445", email: "meena.sharma@example.com" },
+    location: { city: "Eluru", state: "AP", neighborhood: "Main Road" }
+  },
+  {
+    id: 220,
+    title: "Golf Greens Villa - Vizianagaram",
+    address: "Golf Course Road, Vizianagaram, AP 535002",
+    price: 15500000,
+    type: "Villa",
+    status: "For Sale",
+    bedrooms: 4,
+    bathrooms: 5,
+    area: 3900,
+    yearBuilt: 2024,
+    description: "Exclusive villa with golf course access, home theater, and private garden.",
+    features: ["Golf Access", "Home Theater", "Garden", "Parking"],
+    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Arvind Rao", image: "https://randomuser.me/api/portraits/men/88.jpg", phone: "+91 98888 12345", email: "arvind.rao@example.com" },
+    location: { city: "Vizianagaram", state: "AP", neighborhood: "Golf Course Road" }
+  },
+  {
+    id: 221,
+    title: "Rental 2BHK - Ongole City",
+    address: "Trunk Road, Ongole, AP 523001",
+    price: 18000,
+    type: "Apartment",
+    status: "For Rent",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 950,
+    yearBuilt: 2020,
+    description: "2BHK rental with 24x7 water, generator backup, and easy access to bus stand.",
+    features: ["Power Backup", "Parking", "Water Supply"],
+    image: "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a2a?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a2a?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Srinivas Rao", image: "https://randomuser.me/api/portraits/men/90.jpg", phone: "+91 90000 99887", email: "srinivas.rao@example.com" },
+    location: { city: "Ongole", state: "AP", neighborhood: "Trunk Road" }
+  },
+  {
+    id: 222,
+    title: "Heritage Bungalow - Rajahmundry",
+    address: "Dowleswaram, Rajahmundry, AP 533125",
+    price: 11000000,
+    type: "Bungalow",
+    status: "For Sale",
+    bedrooms: 5,
+    bathrooms: 4,
+    area: 3700,
+    yearBuilt: 2015,
+    description: "Classic bungalow with heritage architecture, large verandah, and mature trees.",
+    features: ["Verandah", "Garden", "Parking"],
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Padmaja Rao", image: "https://randomuser.me/api/portraits/women/99.jpg", phone: "+91 98888 77665", email: "padmaja.rao@example.com" },
+    location: { city: "Rajahmundry", state: "AP", neighborhood: "Dowleswaram" }
+  },
+  {
+    id: 223,
+    title: "Student Studio - Guntur University Area",
+    address: "University Road, Guntur, AP 522509",
+    price: 12000,
+    type: "Studio",
+    status: "For Rent",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: 400,
+    yearBuilt: 2021,
+    description: "Furnished studio for students, walkable to university, with WiFi and laundry.",
+    features: ["WiFi", "Laundry", "Furnished"],
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Karthik Reddy", image: "https://randomuser.me/api/portraits/men/91.jpg", phone: "+91 90000 12345", email: "karthik.reddy@example.com" },
+    location: { city: "Guntur", state: "AP", neighborhood: "University Road" }
+  },
+  {
+    id: 224,
+    title: "Hilltop Cottage - Araku Valley",
+    address: "Padmapuram Gardens, Araku Valley, AP 531149",
+    price: 8500000,
+    type: "Cottage",
+    status: "For Sale",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 1600,
+    yearBuilt: 2022,
+    description: "Charming hilltop cottage with valley views, fireplace, and organic garden.",
+    features: ["Fireplace", "Valley View", "Organic Garden"],
+    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=1600&auto=format&fit=crop"
+    ],
+    agent: { name: "Lalitha Devi", image: "https://randomuser.me/api/portraits/women/92.jpg", phone: "+91 90000 54321", email: "lalitha.devi@example.com" },
+    location: { city: "Araku Valley", state: "AP", neighborhood: "Padmapuram Gardens" }
   }
 ];
 
@@ -888,6 +1225,9 @@ properties.push(...kakinadaAdditions);
   properties.length = 0;
   properties.push(...apOnly);
 })();
+
+// Holds the latest filtered/search results so view toggles and sorting keep context
+let currentResults = null;
 
 // Initialize when DOM is ready (handles late script injection)
 if (document.readyState === 'loading') {
@@ -924,8 +1264,8 @@ function renderProperties(filteredProperties = null) {
   // Clear existing properties
   propertiesGrid.innerHTML = '';
   
-  // Use filtered properties if available, otherwise use all properties
-  const propertiesToRender = filteredProperties || properties;
+  // Use filtered properties if available, then currentResults, otherwise all
+  const propertiesToRender = filteredProperties || currentResults || properties;
   
   // Update properties count
   const propertiesCount = document.querySelector('.properties-count span');
@@ -1160,7 +1500,7 @@ function setupEventListeners() {
         const propertiesElement = document.getElementById('properties-grid');
         if (propertiesElement) {
           propertiesElement.className = 'properties-grid';
-          renderProperties();
+          renderProperties(currentResults);
         }
       }
     });
@@ -1174,7 +1514,7 @@ function setupEventListeners() {
         const propertiesElement = document.getElementById('properties-grid');
         if (propertiesElement) {
           propertiesElement.className = 'properties-list';
-          renderPropertiesList();
+          renderPropertiesList(currentResults);
         }
       }
     });
@@ -1224,7 +1564,15 @@ function setupEventListeners() {
         searchProperties();
       }
     });
+    // Debounced search while typing
+    const debounced = debounce(searchProperties, 250);
+    mainSearchInput.addEventListener('input', debounced);
   }
+  // Trigger search on select changes in the top bar
+  ['property-type','property-status','price-range','bedrooms'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', () => searchProperties());
+  });
   
   // Filter functionality
   const applyFiltersButton = document.querySelector('.apply-filters-button');
@@ -1247,8 +1595,8 @@ function renderPropertiesList(filteredProperties = null) {
   // Clear existing properties
   propertiesList.innerHTML = '';
   
-  // Use filtered properties if available, otherwise use all properties
-  const propertiesToRender = filteredProperties || properties;
+  // Use filtered properties if available, then currentResults, otherwise all
+  const propertiesToRender = filteredProperties || currentResults || properties;
   
   // Update properties count
   const propertiesCount = document.getElementById('property-count');
@@ -1316,7 +1664,8 @@ function renderPropertiesList(filteredProperties = null) {
 
 // Sort properties
 function sortProperties(sortOption) {
-  let sortedProperties = [...properties];
+  let base = currentResults ? [...currentResults] : [...properties];
+  let sortedProperties = base;
   
   switch (sortOption) {
     case 'price-high':
@@ -1336,10 +1685,11 @@ function sortProperties(sortOption) {
   // Check if we're in grid or list view
   const isGridView = document.getElementById('grid-view').classList.contains('view-button-active');
   
+  currentResults = sortedProperties;
   if (isGridView) {
-    renderProperties(sortedProperties);
+    renderProperties(currentResults);
   } else {
-    renderPropertiesList(sortedProperties);
+    renderPropertiesList(currentResults);
   }
 }
 
@@ -1388,11 +1738,11 @@ function searchProperties() {
   
   // Check if we're in grid or list view
   const isGridView = document.querySelector('.properties-grid') !== null;
-  
+  currentResults = searchResults;
   if (isGridView) {
-    renderProperties(searchResults);
+    renderProperties(currentResults);
   } else {
-    renderPropertiesList(searchResults);
+    renderPropertiesList(currentResults);
   }
 }
 
@@ -1440,11 +1790,11 @@ function filterProperties() {
   
   // Check if we're in grid or list view
   const isGridView = document.querySelector('.properties-grid') !== null;
-  
+  currentResults = filteredProperties;
   if (isGridView) {
-    renderProperties(filteredProperties);
+    renderProperties(currentResults);
   } else {
-    renderPropertiesList(filteredProperties);
+    renderPropertiesList(currentResults);
   }
 }
 
@@ -1463,7 +1813,16 @@ function resetFilters() {
     checkbox.checked = false;
   });
   
+  // Also reset top search inputs if present
+  ['main-search','property-type','property-status','price-range','bedrooms'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.tagName === 'INPUT') el.value = '';
+    if (el.tagName === 'SELECT') el.value = id === 'bedrooms' ? 'any' : 'all';
+  });
+
   // Reset to show all properties
+  currentResults = null;
   const isGridView = document.getElementById('grid-view').classList.contains('view-button-active');
   
   if (isGridView) {
@@ -1471,4 +1830,13 @@ function resetFilters() {
   } else {
     renderPropertiesList();
   }
+}
+
+// Utility: debounce
+function debounce(fn, wait) {
+  let t;
+  return function(...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), wait);
+  };
 }
